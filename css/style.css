@@ -1,7 +1,7 @@
 a {
 	color: #000;
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4 {
 	font-weight: bold;
 	margin-bottom: 1.5rem;
 }
@@ -27,8 +27,13 @@ input {
 .btn-black {
 	background: #000;
 }
+
+.form-control {
+	border: 1px solid #000!important;
+	}
 img {
 	max-width: 100%;
+	display: block;
 }
 section {
 	margin-bottom: 1.5rem;
@@ -46,6 +51,8 @@ section {
 }
 .section-1 .nav-item-1 {
 	margin-right: 1rem;
+	min-width: 140px;
+	text-align: center;
 }
 .section-1 .nav-tabs-2 {
 	padding-top: 1rem;
@@ -244,6 +251,9 @@ footer li img {
 .breadCumbs {
 	padding: 1rem 0;
 }
+.breadCumbs a{
+	font-size: 1rem;
+}
 .breadCumbs .fa {
     margin: 0 1rem;
     font-size: 1.2rem;
@@ -275,9 +285,80 @@ footer li img {
 .registration .slesh {
 	font-size: 1.5rem;
 }
+.registration .optovy {
+	display: none;
+}
+
+/*category*/
+
+.form-group .fa-search {
+	background: #e65540;
+	padding: 0 .8rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.category .search {
+	border-right: none!important;
+}
+.category .form-group {
+	margin-bottom: 0!important;
+}
+.category h4 {
+	font-weight: bold;
+}
+.category .car {
+	background: #fff;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.category .car p {
+	color: #000;
+	text-align: center;
+}
+.category .car p {
+	margin: 0 auto;
+}
+.category h5 {
+	font-weight: bold;
+}
+
+/*category part*/
+
+.category-part .wrap-part,
+.nav-category .des-wrap {
+	border: 2px solid #ccc;
+	padding: 1rem;
+}
+.category-part .left-part img{
+	width: 105px;
+}
+.category-part .left-part h5{
+	font-weight: bold;
+}
+.nav-category .list-wrap {
+	border: 2px solid #ccc;
+	padding: .6rem;
+}
+.nav-category .list-wrap .form-control{
+	font-size: .75rem;
+}
+.nav-category .list-wrap .card-header,
+.nav-category .list-wrap .card {
+	background: transparent;
+	border: none;
+}
+.nav-category .list-wrap .card-body {
+	padding: 0 1.7rem;
+}
 /* media*/
 
-@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) { 
+
+	.category .left-border {
+		margin-bottom: 1rem;
+	}
+}
 
 @media (max-width: 767.98px) { 
 	.banner .block1 {
@@ -287,11 +368,11 @@ footer li img {
 		margin-top: 2.5rem;
 	}
 	.section-1 .nav-item-1 {
-		max-width: 105px;
+		
 		font-size: .9rem;
 	}
 	.section-1 .nav-item a.nav-link-1{
-		height: 52px;
+		
 		margin-right: 0;
 	}
 	.company {
