@@ -16,7 +16,7 @@ $(document).ready(function() {
 	    }
 	});
 	/*registraion page form*/
-	$(".form-check").click(function() {
+	$(".radio-wrap .form-check").click(function() {
 		console.log($(this).find('input').val());
 		if($(this).find('input').val() == 'customer2') {
 			$('.optovy').css({'display':'block'});
@@ -47,6 +47,13 @@ $(document).ready(function() {
 		$('.des-wrap').css({'display': 'none'});
 		$('#'+name).css({'display': 'block'});
 		console.log(name);
+	});
+
+	/*show all checkbox and change text in spare part */
+
+	$('.search-wrap .line').click(function() {
+		$(this).text($('.visible-1').hasClass('non-visible') ? 'Скрыть' : 'Показать все');
+		$('.visible-1').toggleClass('non-visible');
 	});
 
 });
