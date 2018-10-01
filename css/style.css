@@ -489,7 +489,13 @@ footer li img {
 td {
 	line-height: 2.5;
 }
-
+td .fa-trash {
+	font-size: 1.2rem;
+}
+td .fa-trash:hover {
+	color: #e65540;
+	cursor: pointer;
+}
 /* media*/
 
 @media (max-width: 575.98px) { 
