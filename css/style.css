@@ -476,6 +476,20 @@ footer li img {
 	width: 180px;
 	font-size: .9rem;
 }
+
+/*cart page*/
+.size8 {
+    width: 15px;
+    height: 25px;
+}
+.size7 {
+	width: 30px;
+	height: 25px;
+}
+td {
+	line-height: 2.5;
+}
+
 /* media*/
 
 @media (max-width: 575.98px) { 

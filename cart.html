@@ -370,197 +370,56 @@
             </div>
         </div>
     </section>
-    
     <div class="breadCumbs">
         <div class="container">
             <a href="index.html" class="breadCumbs__page">Главная</a>
             <span class="fa fa-angle-right"></span>
-            <a href="registration.html" class="b-breadCumbs__page m-active">Каталог</a>
-            <span class="fa fa-angle-right"></span>
-            <a href="registration.html" class="b-breadCumbs__page m-active">Легковые(отечественные)</a>
-            <span class="fa fa-angle-right"></span>
-            <a href="registration.html" class="b-breadCumbs__page m-active">ВАЗ</a>
-            <span class="fa fa-angle-right"></span>
-            <a href="registration.html" class="b-breadCumbs__page m-active">Х-гау</a>
+            <a href="registration.html" class="b-breadCumbs__page m-active">Корзина</a>
         </div>
     </div>
-    
-    <section class="category-part py-3">
-        <div class="container">
-            <h4 class="left-border">Категория запчастей</h4>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="wrap-part d-flex flex-wrap justify-content-sm-between align-items-center w-100">
-                        <div class="left-part d-flex flex-wrap align-items-center mb-3">
-                            <img src="img/korea.png" alt="" class="mr-3">
-                            <h5>KIA Rio/Stonic</h5>
-                        </div>
-                        <div class="right-part">
-                            <button class="btn btn-secondary">Выбрать другой автомобиль</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="nav-category">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="list-wrap">
-                        <div class="form-group d-flex">
-                            <input type="text" class="input form-control" placeholder="Введите названия узла или детали">
-                            <span class="fa fa-search"></span>
-                        </div>
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#kuzov-des">
-                                      <span class="name-text link-two" id="kuzov-1">Кузов</span>
-                                      <span class="fa fa-angle-right"></span>
-                                    </a>
-                                </div>
-                                <div id="kuzov-des" class="collapse">
-                                    <div class="card-body">
-                                        аыаыва
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#engine">
-                                        <span class="name-text link-two">Двигатель</span>
-                                        <span class="fa fa-angle-right"></span>
-                                    </a>
-                                </div>
-                                <div id="engine" class="collapse">
-                                    <div class="card-body">
-                                        <div id="accordion">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="card-link" data-toggle="collapse" href="#prokladky">
-                                                        <span class="name-text link-two">Прокладки</span>
-                                                        <span class="fa fa-angle-right"></span>
-                                                    </a>
-                                                </div>
-                                                <div id="prokladky" class="collapse">
-                                                    <div class="card-body">
-                                                        аыаыва
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#electronic">
-                                                        <span class="name-text link-two">Электроника двигателя</span>
-                                                        <span class="fa fa-angle-right"></span>
-                                                    </a>
-                                                </div>
-                                                <div id="electronic" class="collapse">
-                                                    <div class="card-body">
-                                                        <ul>
-                                                            <li>Прокладки</li>
-                                                            <li>Электроника двигателя</li>
-                                                            <li>Система смазки</li>
-                                                            <li>Крепление двигателя</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#systema">
-                                                        <span class="name-text link-two">Система смазки</span>
-                                                        <span class="fa fa-angle-right"></span>
-                                                    </a>
-                                                </div>
-                                                <div id="systema" class="collapse">
-                                                    <div class="card-body">
-                                                        аываыва
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#kreplenye-des">
-                                                        <span class="name-text link-two" id="kreplenye-1">Крепление двигателя</span>
-                                                        <span class="fa fa-angle-right"></span>
-                                                    </a>
-                                                </div>
-                                                <div id="kreplenye-des" class="collapse">
-                                                    <div class="card-body">
-                                                        <ul>
-                                                            <li>Кронштейн двигателя</li>
-                                                            <li>Подвеска двигателя</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Cart -->
+    <section class="cart bgwhite p-t-70 p-b-100">
+        <div class="container">
+            <!-- Cart item -->
+            <div class="wrap-table">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Артикул</th>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Цена, Тг/$</th>
+                            <th scope="col">Остаток, шт</th>
+                            <th scope="col">Кол-во, шт</th>
+                            <th scope="col">Сумма, Тг/$</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        
+                    <tr>
+                        <td>РКЗАГЛУШЕК01ALT</td>
+                        <td>К-т заглушек дниша 2101-06 (АЛЬТЕРНАТИВНЫЕ ПРОИЗВОДИТЕЛИ)</td>
+                        <td>10800 ТГ/$38</td>
+                        <td>45 шт</td>
+                        <td>
+                            <div class="d-flex justify-content-between bo5 of-hidden">
+                                <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+                                    <i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+                                </button>
+
+                                <input class="size8 m-text18 t-center num-product" type="number" name="num-product1" value="1">
+
+                                <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+                                    <i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+                                </button>
                             </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#filter">
-                                        <span class="name-text link-two">Фильтр</span>
-                                        <span class="fa fa-angle-right"></span>
-                                    </a>
-                                </div>
-                                <div id="filter" class="collapse">
-                                    <div class="card-body">
-                                        аываыва
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="des-wrap" id="des-main">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="des-wrap-in wrap-in">
-                                    <img src="img/orig.png" alt="">
-                                    <a href="" class="btn link-two" id="kuzov-2">Кузов</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="des-wrap-in wrap-in">
-                                    <img src="img/orig.png" alt="">
-                                    <a href="" class="btn link-two">Двигатель</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="des-wrap-in wrap-in">
-                                    <img src="img/orig.png" alt="">
-                                    <a href="" class="btn link-two">Фильтр</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="des-wrap" id="kuzov">
-                        <div class="row">
-                            кузов кузов
-                        </div>
-                    </div>
-                    <div class="des-wrap" id="kreplenye">
-                        <h4>Кронштейн двигателя</h4>
-                        <div class="row justify-content-between">
-                            <div class="cron d-flex">
-                                <img src="img/gaz.png" alt="">
-                                <div class="cron-des">
-                                    <h5>Кронштейн</h5>
-                                    <a href="#">Показать все детали узла</a>
-                                </div>
-                            </div>
-                            <span class="cron-number">17</span>
-                        </div>
-                    </div>
-                    
-                </div>
+                        </td>
+                        <td class="column-6">10394 ТГ/ $45</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+            <button class="btn btn-red mx-auto">Оформить заказ</button>
         </div>
     </section>
     <!-- Footer -->
