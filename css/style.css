@@ -1,5 +1,9 @@
 a {
 	color: #000;
+	font-size: 1rem;
+}
+a:hover {
+	text-decoration: underline;
 }
 h1,h2,h3,h4 {
 	font-weight: bold;
@@ -20,6 +24,7 @@ input {
 .btn {
 	font-size: 1.2rem;
 	color: #fff;
+	display: block;
 }
 .btn-red {
 	background: #e65540;
@@ -27,13 +32,18 @@ input {
 .btn-black {
 	background: #000;
 }
-
+.green {
+	color: #00b91e;
+}
 .form-control {
 	border: 1px solid #000!important;
-	}
+}
 img {
 	max-width: 100%;
 	display: block;
+}
+.line {
+	text-decoration: underline!important;
 }
 section {
 	margin-bottom: 1.5rem;
@@ -265,7 +275,7 @@ footer li img {
 /*registration*/
 .left-border {
 	border-left: 3px solid #e65540;
-	padding-left: 5px;
+	padding-left: 8px;
 }
 .registration .form-check-label {
 	line-height: 1.8;
@@ -336,12 +346,20 @@ footer li img {
 .category-part .left-part h5{
 	font-weight: bold;
 }
+.list-wrap, .des-wrap {
+	background: #fff;
+}
+
+.list-wrap, .des-wrap .wrap-in{
+	margin-bottom: 1rem;
+}
 .nav-category .list-wrap {
 	border: 2px solid #ccc;
-	padding: .6rem;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
 }
 .nav-category .list-wrap .form-control{
-	font-size: .75rem;
+	font-size: 1rem;
 }
 .nav-category .list-wrap .card-header,
 .nav-category .list-wrap .card {
@@ -350,6 +368,113 @@ footer li img {
 }
 .nav-category .list-wrap .card-body {
 	padding: 0 1.7rem;
+}
+.card {
+	border-bottom: 1px solid #ccc;
+	border-radius: none;
+}
+.card-header {
+	padding: 0.3rem 1.25rem;
+}
+.card-link {
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-link .fa {
+	font-size: 1.2rem;
+}
+.card-link .name-text:hover {
+	text-decoration: underline;
+}
+.activee {
+	color: #e65540;
+}
+.activee-span {
+	color: #e65540;
+	text-decoration: underline;
+}
+.nav-category .des-wrap-in {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #ccc;
+	padding: 1rem;
+}
+.des-wrap {
+	display: none;
+}
+.des-wrap#des-main {
+	display: block;
+}
+.des-wrap .btn {
+	background: #f2f2f2;
+	color: #000;
+	transition: all .3s ease;
+}
+.des-wrap .btn:hover {
+	background: #e65540;
+	color: #fff;
+}
+.des-wrap .cron img {
+	border-right: 1px solid #ccc;
+	width: 180px;
+	margin-right: 1rem;
+}
+.des-wrap .cron h5 {
+	font-weight: bold;
+}
+.des-wrap .cron a {
+	margin-left: 1rem;
+	text-decoration: underline;
+}
+
+.des-wrap .cron-number {
+	margin-right: 1.5rem;
+}
+
+/*spare-part page*/
+
+.price-wrap {
+	border-bottom: 2px solid #ccc;
+	padding: 1rem 0 .5rem;
+}
+.form-check label {
+	margin-left: 1rem;
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.8;
+}
+.form-check label .label-name {
+	font-size: 1.2rem;
+}
+.spare-right, .spare-des {
+	border: 2px solid #ccc;
+	padding: 1rem;
+}
+.spare-right h5 {
+	font-weight: bold;
+}
+.spare-des .top {
+	border-bottom: 1px solid #ccc;
+}
+.spare-des img{
+	width: 135px;
+	margin:1rem auto;
+}
+.spare-des .spare-list {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.spare-des .spare-list .name{
+	font-weight: bold;
+}
+.spare-des .spare-list .des{
+	width: 180px;
+	font-size: .9rem;
 }
 /* media*/
 

@@ -26,5 +26,27 @@ $(document).ready(function() {
 		}
 	});
 	/*types page list*/
+	
+	/*angle down and right*/
+	$('.card-link').click(function() {
+		$(this).toggleClass('activee');
+		$(this).find('.fa').toggleClass('fa-angle-right');
+		$(this).find('.fa').toggleClass('fa-angle-down');
+	});
+	
+	/*activee class */
+	$('.name-text').click(function() {
+		$('.name-text').removeClass('activee-span');
+		$(this).addClass('activee-span');
+	});
+
+	/*display block none for each card-link*/
+
+	$('.card-link .name-text').click(function() {
+		var name = $(this).attr('id').split('-')[0];
+		$('.des-wrap').css({'display': 'none'});
+		$('#'+name).css({'display': 'block'});
+		console.log(name);
+	});
 
 });
