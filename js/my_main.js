@@ -56,4 +56,25 @@ $(document).ready(function() {
 		$('.visible-1').toggleClass('non-visible');
 	});
 
+	/*cabinet page input and span event focus*/
+
+	$('.cabinet-top .number').hover(function() {
+		$(this).addClass('non-active');
+		$('.cabinet-top .number-input').val($(this).text());
+		$('.cabinet-top .number-input').removeClass('non-active');
+	});
+
+	$('.cabinet-top .number-input').focusout(function() {
+		$(this).addClass('non-active');
+		$('.cabinet-top .number').text($(this).val());
+		$('.cabinet-top .number').removeClass('non-active');
+	});
+	/*shipping page address display none block*/
+
+	$(".shipping-wrap").click(function() {
+		if($(this).find("input[type='radio']").attr('id') == 'shipping-1') {
+			$('.input-wrap .address').css({'display': 'none'});	
+		}
+	});
+
 });
