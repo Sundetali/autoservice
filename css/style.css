@@ -37,6 +37,9 @@ h4 {
 table {
 	overflow-x: scroll;
 }
+.form-group label {
+	position: relative;
+}
 .btn {
 	font-size: 1.2rem;
 	display: block;
@@ -485,7 +488,7 @@ input[type='text'], input[type='password'],textarea {
 .form-check label {
 	display: flex;
 	justify-content: space-between;
-	line-height: 1.8;
+	line-height: 1.5;
 }
 .form-check label .label-name {
 	font-size: 1.2rem;
@@ -686,6 +689,9 @@ td .fa-trash:hover {
 	font-size: .8rem;
 	line-height: 1rem;
 }
+.form-top .form-check {
+	margin-bottom: 0;
+}
 .form-top .form-check-label {
 	flex-direction: column;
 }
@@ -695,7 +701,7 @@ td .fa-trash:hover {
 }
 .form-bottom .obez {
 	font-size: .9rem;
-	color: #ccc;
+	margin-left: 2rem;
 }
 .shipping-wrapper .form-group label{
 	display: block;
@@ -711,6 +717,7 @@ td .fa-trash:hover {
     font-style: italic;
 }
 .check-wrap span {
+	display: block;
 	margin-left: 2.5rem;
 }
 .radio-bottom {
@@ -724,8 +731,22 @@ td .fa-trash:hover {
 .send-wrap span {
 	display: block;
 }
-.send-wrap .btn{
-	font-size: .9rem;
+.input-wrap .address-wrap {
+	display: none;
+}
+.fa-star {
+	font-size: .5rem;
+	color: #e65540;
+	position: absolute;
+	right: -8px;
+    top: 0;
+}
+.obez {
+	position: relative;
+}
+.obez .fa-star {
+	top: 3px;
+    left: -10px;
 }
 /* media*/
 
@@ -762,11 +783,20 @@ td .fa-trash:hover {
 	.company {
 		display: none;
 	}
-	.registration .form-group label {
-		text-align: left;
+	.form-group label {
+		text-align: left!important;
+		display: inline-block!important;
+
 	}
 	.cabinet-wrapper form .name {
 		text-align: left;
+	}
+	.form-top .price {
+		margin-left: 3rem;
+	}
+	.form-top .fa-star {
+		right: -6px;
+    	top: 0;
 	}
 }
 

@@ -71,9 +71,13 @@ $(document).ready(function() {
 	});
 	/*shipping page address display none block*/
 
-	$(".shipping-wrap").click(function() {
+	$(".shipping-wrap.form-check").click(function() {
+		var addres = $('.input-wrap .address-wrap');
 		if($(this).find("input[type='radio']").attr('id') == 'shipping-1') {
-			$('.input-wrap .address').css({'display': 'none'});	
+			addres.css({'display': 'none'});	
+		}
+		else {
+			addres.css({'display': 'block'});	
 		}
 	});
 

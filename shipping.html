@@ -332,7 +332,10 @@
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-3">
-										<label for="name">ФИО</label>
+										<label for="name">
+										ФИО
+										<span class="fa fa-star"></span>
+										</label>
 									</div>
 									<div class="col-md-6">
 										<input type="text" class="form-control" name="name">	
@@ -342,7 +345,9 @@
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-3">
-										<label for="number">Телефон</label>
+										<label for="number">Телефон
+											<span class="fa fa-star"></span>
+										</label>
 									</div>
 									<div class="col-md-6">
 										<input type="text" class="form-control" name="number">	
@@ -352,7 +357,9 @@
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-3">
-										<label for="city">Город</label>
+										<label for="city">Город
+											<span class="fa fa-star"></span>
+										</label>
 									</div>
 									<div class="col-md-6">
 										<input type="text" class="form-control" name="city">	
@@ -362,12 +369,12 @@
 						</div>
 						<div class="col-md-7">
 							<h5>Способ доставки</h5>
-							<div class="radio-wrap mb-4">
-								<div class="row">
-									<div class="col-md-8">
+							<div class="mb-4">
+								<div class="row mb-3">
+									<div class="col-md-7">
 				                        <div class="form-check shipping-wrap mr-5">
 				                            <input class="form-check-input" type="radio" name="shipping" id="shipping-1" value="shipping-1" checked>
-				                            <label class="form-check-label" for="call">
+				                            <label class="form-check-label" for="shipping-1">
 				                                <span class="">Самовывоз</span>
 				                                <span class="add-span">Адрес: Саратовская обл., г. Балаково, ул. Транспортная, д. 6</span>
 				                            </label>
@@ -377,11 +384,11 @@
 										<span class="price">Бесплатно</span>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-md-8">
+								<div class="row mb-3">
+									<div class="col-md-7">
 			                            <div class="form-check shipping-wrap">
 			                                <input class="form-check-input" type="radio" name="shipping" id="shipping-2" value="shipping-2">
-			                                <label class="form-check-label" for="call">
+			                                <label class="form-check-label" for="shipping-2">
 			                                    <span class="">Транспортная компания “KazTrade”</span>
 			                                </label>
 			                            </div>
@@ -391,10 +398,10 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-8">
+									<div class="col-md-7">
 			                            <div class="form-check shipping-wrap">
 			                                <input class="form-check-input" type="radio" name="shipping" id="shipping-3" value="shipping-3">
-			                                <label class="form-check-label" for="call">
+			                                <label class="form-check-label" for="shipping-3">
 			                                    <span class="">Сторонняя транспортная компания</span>
 			                                    <span class="add-span">Деловые линии ПЭК и прочее</span>
 			                                </label>
@@ -407,14 +414,16 @@
 	                        </div>
 	                        <div class="input-wrap">
 								<div class="row">
-									<div class="col-md-8">
-										<div class="form-group">
+									<div class="col-md-7">
+										<div class="form-group address-wrap">
 											<div class="row">
 												<div class="col-md-4">
-													<label for="address">Адрес</label>	
+													<label for="address">Адрес
+														<span class="fa fa-star"></span>
+													</label>	
 												</div>
 												<div class="col-md-8">
-													<input type="text" class="form-control">	
+													<input type="text" class="form-control" id="address">	
 												</div>
 											</div>
 										</div>
@@ -441,13 +450,13 @@
 							<h5>Способ оплаты</h5>
 								<div class="form-check">
 		                            <input class="form-check-input" type="radio" name="payment" id="payment-1" value="payment-1">
-		                            <label class="form-check-label" for="call">
+		                            <label class="form-check-label" for="payment-1">
 		                               Безналичный платеж
 		                            </label>
 		                        </div>
 		                        <div class="form-check">
 		                            <input class="form-check-input" type="radio" name="payment" id="payment-2" value="payment-2">
-		                            <label class="form-check-label" for="call">
+		                            <label class="form-check-label" for="payment-2">
 		                                Оплата онлайн (банковская карта, электронные деньги и другие способы оплаты)
 		                            </label>
 		                        </div>
@@ -459,11 +468,13 @@
 		                        <div class="radio-bottom d-flex flex-wrap justify-content-md-between">
 			                        <div class="form-check mr-3">
 			                            <input class="form-check-input" type="radio" name="payment" id="payment-3" value="payment-3">
-			                            <label class="form-check-label" for="call">
+			                            <label class="form-check-label" for="payment-3">
 			                                Я ознакомлен и согласен <span class="line">с условиями предоставления услуг</span>
 			                            </label>
 			                        </div>
-			                        <span class="obez">обязательно для заполнение</span>	
+			                        <span class="obez">обязательно для заполнение
+										<span class="fa fa-star"></span>
+									</span>	
 		                        </div>
 		                        <div class="send-wrap">
 		                        	<div>
