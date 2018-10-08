@@ -41,6 +41,119 @@
 <!--===============================================================================================-->
 </head>
 <body>
+	    <!-- icon callback-->
+    <div class="modal-buttons">
+    	<div class="inital-icon">
+		    <div class="callback-icon">
+		        <i class="fa fa-phone"></i>
+		    </div>
+    	</div>
+	    <div class="icons">
+	    	<div class="chat-icon">
+		        <i class="fa fa-envelope" data-toggle="modal" data-target="#callback"></i>
+		    </div>
+		    <div class="callback-icon mt-3">
+		        <i class="fa fa-phone" data-toggle="modal" data-target="#callback-2"></i>
+		    </div>
+		    <div class="times-icon mt-3">
+		    	<i class="fa fa-times"></i>
+		    </div>
+	    </div>	
+    </div>
+    
+
+	<!-- Modal callback1-->
+	<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-callback" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		      	<i class="fas fa-times" data-dismiss="modal"></i>
+		        <h5>МЫ ПЕРЕЗВОНИМ ВАМ</h5>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="body-in">
+		      	<h3>Не нашли, что искали?</h3>
+		      	<p class="mb-4 text-center">Остались вопросы? Мы перезвоним вам и поможем!</p>
+		      	<form action="">
+		      		<div class="from-group">
+		      			<label for="phone">Телефон</label>
+		      			<input type="text" class="form-control" id="phone" name="phone">
+		      		</div>
+	                <div class="form-check my-4">
+            			<input type="checkbox" class="form-check-input" id="agree">
+                    	<label for="agree" class="form-check-label">
+                    		Нажимая кнопку «Жду звонка», я даю свое 
+							согласие на обработку моих персональных данных,
+							в соответствии с Федеральным законом от
+							27.07.2006 года №152-ФЗ «О персональных 
+							данных», на условиях и для целей, определенных в 
+							Согласии на обработку персональных данных
+						</label>
+	            	</div>
+	            	<button class="btn btn-red mx-auto">ЖДУ ЗВОНКА</button>
+	            	<span class="des-btn d-block text-center mt-1">Звонок бесплатный</span>
+		      	</form>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal callback2-->
+	<div class="modal fade" id="callback-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-callback-2" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		      	<i class="fas fa-times" data-dismiss="modal"></i>
+		        <h5>ЗАПОЛНИЕ ФОРМУ</h5>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="body-in">
+		      	<h3>Обратная связь</h3>
+		      	<p class="mb-4 text-center">Поделитесь мнением о нашей работе или 
+					задайте нам любой интересующий вас вопрос в 
+					поле комментарий
+				</p>
+		      	<form action="">
+		      		<div class="from-group">
+		      			<label for="name">ФИО:</label>
+		      			<input type="text" class="form-control" id="name" name="name">
+		      		</div>
+		      		<div class="from-group">
+		      			<label for="email">E-mail:</label>
+		      			<input type="text" class="form-control" id="email" name="email">
+		      		</div>
+		      		<div class="from-group">
+		      			<label for="phone">Телефон:</label>
+		      			<input type="text" class="form-control" id="phone" name="phone">
+		      		</div>
+		      		<div class="from-group">
+		      			<label for="comment">Коментарий:</label>
+		      			<textarea name="comment" id="comment" cols="30" rows="3" class="form-control"></textarea>
+		      		</div>
+	                <div class="form-check my-4">
+            			<input type="checkbox" class="form-check-input" id="agree-1">
+                    	<label for="agree-1" class="form-check-label">
+                    		Нажимая кнопку «Отправить», я даю свое 
+							согласие на обработку моих персональных данных,
+							в соответствии с Федеральным законом от
+							27.07.2006 года №152-ФЗ «О персональных 
+							данных», на условиях и для целей, определенных в 
+							Согласии на обработку персональных данных
+						</label>
+	            	</div>
+	            	<button class="btn btn-red mx-auto">Отправить</button>
+		      	</form>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- fdsfsd -->
+	<div class="modal-background"></div>
+
+
+
 	<!-- Header -->
 	<header class="header1">
 		<!-- Header desktop -->

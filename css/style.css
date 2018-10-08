@@ -1,3 +1,135 @@
+
+.modal-buttons {
+	position: fixed;
+    right: 68px;
+    bottom: 20px; 
+    z-index: 10002 
+}
+.times-icon, .callback-icon, .chat-icon{
+	color: #FFF;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transition: all ease-in-out .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.callback-icon, .chat-icon {
+    background: #5FCFE2;
+}
+.times-icon {
+	background-color: #D7D7D7;
+}
+.inital-icon .callback-icon:before {
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    -webkit-animation: spin 4s infinite linear;
+    animation: spin 4s infinite linear;
+}
+.inital-icon .callback-icon:before, .callback-icon:after {
+    position: absolute;
+    content: '';
+    border: solid 1px;
+    border-color: #5FCFE2 transparent;
+    border-radius: 100%;
+}
+.inital-icon .callback-icon:after {
+    top: -16px;
+    bottom: -16px;
+    left: -16px;
+    right: -16px;
+    -webkit-animation: spin 5s infinite linear;
+    animation: spin 5s infinite linear;
+}
+.callback-icon .fa {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all ease-in-out .3s;/* 
+    -webkit-animation: spin-icon 1s infinite ease-in-out;
+    animation: spin-icon 1s infinite ease-in-out; */
+}
+.modal-buttons .fa-times,
+.modal-buttons .fa-envelope,
+.modal-buttons .fa-phone
+ {
+	line-height: 40px;
+    font-size: 17px; 
+}
+.icons {
+	display: none;
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+/*modal window*/
+.modal-dialog {
+	width: 400px;
+}
+.modal-header, .modal-body {
+	width: 80%;
+	margin: 0 auto;
+}
+.modal-header .fa-times {
+	position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #A8A9AB;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.modal-header {
+	display: block;
+	text-align: center;
+	border: none;
+	padding-bottom: 0;
+}
+.modal-header h5 {
+	border-bottom: 2px solid #e65540;
+    padding-bottom: 1rem;
+}
+.modal-body h3 {
+	text-align: center;
+}
+
+.modal-body label {
+	font-weight: bold;
+}
+.modal-body .des-btn {
+	font-size: .85rem;
+}
+.body-in {
+	margin-right: auto;
+	margin-left: auto;
+}
+/* .modal-background {
+	height: 100vh;
+	width: 100%;
+	z-index: 10000;
+	position: absolute;
+	
+} */
+
 body,html {
 	background: #fff!important;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
@@ -322,7 +454,8 @@ footer li img {
 .registration .form-check-label {
 	line-height: 1.8;
 }
-input[type='text'], input[type='password'],textarea {
+input[type='text'], input[type='password'],
+input[type='email'],textarea {
 	border: 1px solid #0b3356!important;
 	/*min-width: 348px!important;*/
 	padding: .2rem .75rem!important;

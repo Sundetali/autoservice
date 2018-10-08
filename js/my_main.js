@@ -81,4 +81,14 @@ $(document).ready(function() {
 		}
 	});
 
+	/*modal*/
+	$('.inital-icon').click(function() {
+		$(this).css({'display': 'none'});
+		$('.icons').css({'display': 'block'});
+	});
+	$('.icons .times-icon').click(function() {
+		$('.icons').css({'display': 'none'});
+		$('.inital-icon').css({'display': 'block'});
+	});
+
 });
