@@ -134,7 +134,7 @@ body,html {
 	background: #fff!important;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
 	color: #0b3356!important;
-	font-size: 12px;
+	font-size: 14px;
 }
 a, p, li,span{
 	color: #0b3356;
@@ -178,6 +178,22 @@ table {
 	background: #f2f2f2;
 	color: #000;
 	transition: all .3s ease;
+}
+#favourite .modal-body {
+	width: 100%;
+	padding: 2rem 1rem;
+}
+#favourite .modal-body h5 {
+	margin-bottom: .5rem;
+}
+.modal-body .fa-check {
+	color: #66a8a6;
+    font-size: 3rem;
+    font-weight: 900;
+    border: 4px solid rgba(102, 168, 166, 0.2);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 .red {
 	color: #e65540!important;
@@ -290,10 +306,15 @@ section {
 	margin-right: auto;
 }
 .banner .block1 {
-	height: 250px;
+	height: 270px;
 	-webkit-box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);
 	box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);
+}
+.banner .block1, .car {
+	-webkit-box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);
+	box-shadow: -2px 9px 28px -13px rgba(0,0,0,0.75);	
 }
 .banner .block11 {
 	height: 350px;
@@ -306,7 +327,7 @@ section {
 	width: 163px!important;
 }
 .banner .block1 img{
-	max-width: 270px;
+	max-width: 250px;
     width: 100%;
     display: block;
     margin: 0 auto;
@@ -314,6 +335,7 @@ section {
 .banner .block1 a{
 	text-align: center;
 	font-size:1.2rem;
+	padding: .5rem;
 }
 .banner .block1 a:hover{
 	text-decoration: none;
@@ -322,6 +344,17 @@ section {
 	position: absolute;
     left: 30%;
     bottom: 1rem;
+}
+.fa-heart {
+	position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+.fa-heart:hover, .fa-heart.active-heart {
+	color: #cb444e;
 }
 .section-3 img {
 	max-height: 300px;
@@ -344,8 +377,13 @@ section {
 	position: absolute;
     left: 29%;
     top: 10%;
-    color: #fff;
+    color: #fff!important;
     width: 65%;
+}
+
+
+.block2-overlay {
+	height: 50px;
 }
 .section-4 .block2 {
 	margin: 0 auto;
@@ -420,6 +458,9 @@ section {
     color: #000;
     font-size: 1rem;
     padding: 0 1rem;
+}
+.footer-in {
+	border-top: 2px solid #e65540;
 }
 footer li {
 	line-height: 2rem;
@@ -496,6 +537,9 @@ input[type='email'],textarea {
 	background: #fff;
 	padding: 1rem;
 	margin-bottom: 1rem;
+}
+.category a:hover {
+	text-decoration: none!important;
 }
 .category .car p {
 	color: #000;
@@ -845,7 +889,6 @@ td .fa-trash:hover {
 }
 .check-wrap {
 	margin: 2rem 0;
-    border-bottom: 1px solid red;
     padding-bottom: 1rem;
     font-style: italic;
 }

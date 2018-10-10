@@ -8,13 +8,29 @@ $(document).ready(function() {
 	            items:1
 	        },
 	        600:{
-	            items:3
+	            items:2
 	        },
 	        1000:{
-	            items:5
+	            items:4	
 	        }
 	    }
 	});
+	/*index page*/
+	$('.fa-heart').click(function() {
+		$(this).toggleClass('active-heart');
+		var brand_name = $(this).closest('.spare-des').find('.des-name');
+		$('#favourite h5').text(brand_name.text());
+
+		/*add and remove modal*/
+		if($(this).hasClass('active-heart')) {
+			$(this).attr('data-toggle', 'modal');
+		}
+		else {
+			$(this).removeAttr('data-toggle');
+		}
+	});
+
+
 	/*registraion page form*/
 	$(".radio-wrap .form-check").click(function() {
 		console.log($(this).find('input').val());
@@ -25,6 +41,8 @@ $(document).ready(function() {
 			$('.optovy').css({'display':'none'});
 		}
 	});
+
+
 	/*types page list*/
 	
 	/*angle down and right*/
