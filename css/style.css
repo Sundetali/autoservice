@@ -184,6 +184,9 @@ table {
 	color: #000;
 	transition: all .3s ease;
 }
+.modal .from-group {
+	margin-bottom: .6rem;
+}
 .modal h3,
 .modal h5,
 .modal .form-check-label{
