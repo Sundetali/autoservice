@@ -166,10 +166,82 @@
 	    </div>
 	  </div>
 	</div>
-
-	<!-- fdsfsd -->
-	<div class="modal-background"></div>
-
+	
+	<!-- Modal calculator -->
+	
+	<!-- Modal callback1-->
+	<div class="modal fade" id="calculator" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-calculator" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		      	<i class="fas fa-times" data-dismiss="modal"></i>
+		        <h5>Экспресс-расчет стоимости доставки</h5>
+	      </div>
+	      <div class="modal-body">
+	      	<form action="" id="calc">
+	      		
+	      		<div class="from-to">
+	      			<div class="row">
+	      				<div class="col-md-6">
+			      			<div class="form-group">
+							    <label for="from">Откуда:</label>
+							    <select class="form-control" id="from">
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							    </select>
+							</div>
+	      				</div>
+	      				<div class="col-md-6">
+			      			<div class="form-group">
+							    <label for="to">Kуда:</label>
+							    <select class="form-control" id="to">
+							      <option>1</option>
+							      <option>2</option>
+							      <option>3</option>
+							      <option>4</option>
+							      <option>5</option>
+							    </select>
+							</div>
+			      		</div>
+	      			</div>
+	      		</div>
+	      		<div class="choice">
+	      			<div class="row">
+	      				<div class="col-md-3">
+	      						<div class="form-group">
+	      							<label for="weight">Вес (кг):</label>
+	      							<input type="text" class="form-control" id="weight">
+	      						</div>
+	      				</div>
+	      				<div class="col-md-3">
+      						<div class="form-group">
+      							<label for="capacity">Объемы (м3):</label>
+      							<input type="text" class="form-control" id="capacity">
+      						</div>
+	      				</div>	
+	      				<div class="col-md-3">
+	      					<div class="form-group">
+      							<label for="kolvomest">Кол-во мест:</label>
+      							<input type="text" class="form-control" id="kolvomest">
+      						</div>
+	      				</div>
+	      				<div class="col-md-3">
+	      					<div class="form-group">
+	      						<label for="" class="invisible"></label>
+		      					<button class="btn btn-red form-control" id="calc-button">Рассчитать</button>
+	      					</div>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<p class="error1">Направление не существует!</p>
+	      	</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
 	<!-- Header -->
@@ -632,7 +704,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="#" class="flex-c-m   bg3 hov1 trans-0-4">
+							<a href="#" class="flex-c-m bg3 hov1 trans-0-4" data-toggle="modal" data-target="#calculator">
 								Логистические услуги
 							</a>
 						</div>
@@ -798,29 +870,33 @@
 			<div class="row footer-in pt-4">
 				<div class="col-md-3">
 					<h5>Товары</h5>
-					<ul><li>Каталог запчастей</li>
-					<li>Запчасти для ТО Масла</li>
-					<li>Масла и автохимия</li>
-					<li>Электрооборудование</li></ul>
+					<ul>
+						<li><a href="#">Каталог запчастей</a></li>
+						<li><a href="#">Запчасти для ТО Масла</a></li>
+						<li><a href="#">Масла и автохимия</a></li>
+						<li><a href="#">Электрооборудование</a></li>
+					</ul>
 				</div>
 				<div class="col-md-3">
 					<h5>Партнерства</h5>
-					<ul><li>Оптовым покупателям</li>
-					<li>Поставщикам</li>
-					<li>Партнерская сеть</li>
+					<ul>
+						<li><a href="#">Оптовым покупателям</a></li>
+						<li><a href="#">Поставщикам</a></li>
+						<li><a href="#">Партнерская сеть</a></li>
+					</ul>
 				</div>
 				<div class="col-md-3">
 					<h5>COMPANY</h5>
 					<ul>
-						<li>Оплата</li>
-						<li>О компании</li>
-						<li>Контактные данные</li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контактные данные</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3">
 					<ul>
-						<li><img src="img/visa_PNG39.png" alt=""></li>
-						<li><img src="img/webmoney.png" alt=""></li>
+						<li><a href="#"><img src="img/visa_PNG39.png" alt=""></a></li>
+						<li><a href="#"><img src="img/webmoney.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>

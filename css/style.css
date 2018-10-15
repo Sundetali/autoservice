@@ -157,6 +157,11 @@ h3 {
 h4 {
 	font-size: 1.5rem;
 }
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
 .border-rightt {
 	border-right: 2px solid #ccc;
 }
@@ -179,6 +184,16 @@ table {
 	color: #000;
 	transition: all .3s ease;
 }
+.modal h3,
+.modal h5,
+.modal .form-check-label{
+	font-weight: 100;
+}
+.modal .form-check-label,
+.modal label,
+.modal p {
+	font-size: .85rem;
+}
 #favourite .modal-body {
 	width: 100%;
 	padding: 2rem 1rem;
@@ -194,6 +209,17 @@ table {
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+/*modal calculator*/
+
+.modal-calculator {
+	width: 860px;
+    max-width: 100%;
+}
+.error1 {
+	display: none;
+	color: red;
+    text-align: center;
 }
 .red {
 	color: #e65540!important;
@@ -510,7 +536,7 @@ footer li img {
 }
 input[type='text'], input[type='password'],
 input[type='email'],textarea {
-	border: 1px solid #0b3356!important;
+	border: 1px solid #ced4da!important;
 	/*min-width: 348px!important;*/
 	padding: .2rem .75rem!important;
 }

@@ -108,5 +108,42 @@ $(document).ready(function() {
 		$('.icons').css({'display': 'none'});
 		$('.inital-icon').css({'display': 'block'});
 	});
+	/*calculator*/
 
+	$("#calc-button").click(function(){
+        var w = parseFloat($.trim($("#weight").val()));
+		var c = parseFloat($.trim($("#capacity").val()));
+		var m = parseInt($.trim($("#kolvomest").val()));
+		var cityFrom = $.trim($("#from option:selected").text());
+		var cityTo = $.trim($("#to option:selected").text());
+		
+		$("#calc .error1").hide();
+		$("#calc .sum-hidden").hide();
+        if (cityFrom == cityTo) {
+			$("#calc .error1").html("Направление не существует!");
+            $("#calc .error1").show();
+            return false;
+        }  
+		if(w<=0 || isNaN(w)){
+			$("#calc .error1").html("Введите вес!");
+			$("#calc .error1").show();
+			return false;
+		}
+		if(c<=0 || isNaN(c)){
+			$("#calc .error1").html("Введите объём!");
+			$("#calc .error1").show();
+			return false;
+		}
+		if(m < 1 || isNaN(m))
+			m = 1;
+		
+		var data = new Object();
+		data.cityfrom = cityFrom;
+		data.cityto = cityTo;
+		data.ves = w;
+		data.obm3 = c;
+		data.mest = m;
+		data.noAuth = 1;
+		console.log(data);
+	});
 });
